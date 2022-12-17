@@ -1,0 +1,21 @@
+.header-div {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+
+.hamburger {
+  padding: 20px;
+  border: 1px solid #E1DFEC;
+  display: flex;
+  flex-direction: column;
+}
+
+.ham-slice {
+  height: 3px;
+  width: 25px;
+  background-color: #1355FF;
+  border-radius: 6px;
+  margin: 2px 0;
+}

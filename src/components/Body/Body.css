@@ -1,0 +1,30 @@
+.blue-box {
+  height: 64px;
+  width: 64px;
+  background-color: #1355FF;
+}
+
+.section-01 > .content-section {
+  background-color: #061237;
+  color: #fff;
+  padding-top: 80px;
+}
+
+.content-section > .container {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.h1-text {
+  font-size: 55px;
+  line-height: 65px;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: 400;
+}
