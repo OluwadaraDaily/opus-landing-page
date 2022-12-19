@@ -1,5 +1,6 @@
 import './Header.css'
-import logo from '../../img/61779b485e784e7e77620967_Logo.svg.svg'
+import logo from '../../img/logo.svg'
+import Button from '../Button/Button'
 const Header = () => {
   return ( 
     <header>
@@ -13,6 +14,14 @@ const Header = () => {
             <div className="ham-slice"></div>
             <div className="ham-slice"></div>
           </div>
+          <ul className='links'>
+            <li className="link">Overview</li>
+            <li className="link">Pages</li>
+            <li className="link">Template</li>
+          </ul>
+        </div>
+        <div className="contact-us">
+          <Button text="Contact Us" />
         </div>
       </div>
     </header>

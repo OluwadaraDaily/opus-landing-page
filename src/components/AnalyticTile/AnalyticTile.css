@@ -1,0 +1,25 @@
+.tile-div {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px
+}
+.tile-title {
+    font-size: 37px;
+    line-height: 48px;
+    color: #061237;
+    margin: 10px 0;
+}
+
+.tile-subtitle {
+    font-size: 16px;
+    line-height: 32px;
+    color: #061237;
+    margin: 0;
+}
+
+.tile-text {
+    color: #67718E;
+    font-size: 16px;
+    line-height: 32px;
+    margin: 0;
+}

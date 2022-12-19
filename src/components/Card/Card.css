@@ -1,0 +1,10 @@
+.card-div {
+    background-color: #fff;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+.card-h1-text {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+}

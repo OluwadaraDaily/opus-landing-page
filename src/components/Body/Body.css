@@ -1,3 +1,50 @@
+/* Generic Styles */
+
+.h1-text {
+  font-size: 55px;
+  line-height: 65px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.h2-text {
+  font-size: 48px;
+  line-height: 56px;
+  margin: 0;
+}
+
+.h3-text {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+.h4-text {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.p-text {
+  font-size: 16px;
+  line-height: 32px;
+  margin: 0;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* ----------------------- */
+
 .blue-box {
   height: 64px;
   width: 64px;
@@ -7,7 +54,7 @@
 .section-01 > .content-section {
   background-color: #061237;
   color: #fff;
-  padding-top: 80px;
+  padding: 80px 0 0 0;
 }
 
 .content-section > .container {
@@ -16,15 +63,235 @@
   text-align: center;
 }
 
-.h1-text {
-  font-size: 55px;
-  line-height: 65px;
-  font-weight: 700;
-  margin-top: 0;
+.content-section .text-div {
+  margin: 50px 0;
 }
 
-.text {
+.content-section .btn-div {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content-section .img-div {
+  width: 100%;
+}
+
+/* Section 2 Styles */
+
+.section-02 {
+  color: #061237;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.section-02 .container, .section-03 .container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.partner-logos {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Section 3 Styles */
+
+.section-03 .text {
+  color: #37456C;
   font-size: 18px;
   line-height: 36px;
-  font-weight: 400;
+}
+.video-title-div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 64px;
+  width: 64px;
+  background-color: #F7F9FC;
+  margin-bottom: 50px;
+}
+
+.video-title {
+  position: absolute;
+  left: 40px;
+  width: 100px;
+  text-transform: uppercase;
+  color: #67718E;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.video {
+  position: relative;
+}
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.info-cards {
+  position: relative;
+  padding-bottom: 80px;
+  margin-bottom: 60px;
+}
+
+.info-cards-bg {
+  z-index: -1;
+  position: absolute;
+  right: 10px;
+  height: 100%;
+}
+
+/* Section 4 */
+.section-04 {
+  background-color: #061237;
+  color: #fff;
+  padding: 90px 0;
+}
+
+.section-04 .container {
+  width: 83%;
+}
+
+.section-04 .call-to-action {
+  text-align: center;
+}
+
+/* Section 5 */
+.section-05 {
+  padding: 70px 0;
+}
+.section-05 .main-card .h2-text {
+  color: #061237;
+}
+.section-05 .main-card .call-to-action {
+  margin-left: 30px;
+}
+
+.section-05 .main-card .call-to-action .text {
+  font-size: 16px;
+  line-height: 32px;
+  color: #37456C;
+}
+
+/* Section 6 */
+.section-06 {
+  padding-bottom: 50px;
+  margin-bottom: 100px;
+}
+.features-div {
+  margin-bottom: 150px;
+}
+.features-title {
+  height: 64px;
+  width: 64px;
+  position: relative;
+  background-color: #F7F9FC;
+  display: flex;
+  align-items: center;
+}
+
+.features-title h4 {
+  position: absolute;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color:#67718E;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  left: 25px;
+  width: 500px;
+}
+.features-tagline h1 {
+  margin-bottom: 40px;
+}
+.features-item {
+  display: flex;
+  gap: 20px;
+}
+.features-text {
+  color: #061237;
+}
+
+.our-knowledge-div {
+  margin-bottom: 150px;
+}
+
+.our-knowledge-text .p-text {
+  color: #061237;
+  margin-top: 25px;
+}
+
+
+.stamps-info {
+  text-align: center;
+}
+
+.stamps-img img {
+  width: 100%;
+}
+
+.designer-info {
+  text-align: center;
+}
+
+.designer-name {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.designer-title {
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: #67718E;
+}
+
+.designer-title span {
+  color: #1355FF;
+}
+
+.toggle {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.left-toggle, .right-toggle {
+  height: 40px;
+  width: 40px;
+  background-color: #F2F3F8;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.left-arrow-icon, .right-arrow-icon {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+}
+
+.designer img {
+  width: 100%;
+}
+/* Section 7 Styles */
+.section-07 {
+  padding: 50px 0;
+}
+.resources-title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
 }

@@ -5,6 +5,10 @@
   align-items: center;
 }
 
+.links, .contact-us {
+  display: none;
+}
+
 .hamburger {
   padding: 20px;
   border: 1px solid #E1DFEC;
@@ -18,4 +22,40 @@
   background-color: #1355FF;
   border-radius: 6px;
   margin: 2px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .header-div {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .hamburger {
+    display: none;
+  }
+  .menu .links {
+    display: flex;
+    gap: 40px;
+  }
+
+  .links .link {
+    font-size: 14px;
+    line-height: 24px;
+    color: #37456C;
+    padding: 10px;
+    font-weight: 300;
+  }
+
+  .links .link:hover {
+    background-color: #37456C;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .contact-us {
+    display: block;
+  }
+
+  .contact-us div {
+    cursor: pointer;
+  }
 }

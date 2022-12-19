@@ -1,0 +1,23 @@
+.icon-card-div {
+    display: flex;
+    gap: 30px;
+    margin: 60px 0;
+}
+.icon-box {
+    height: 64px;
+    width: 64px;
+    background-color: #1355FF;
+    position: relative;
+}
+
+.icon-card-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-60%, -50%);
+    color: #fff;
+}
+
+.icon-card-text {
+    color: #061237;
+}

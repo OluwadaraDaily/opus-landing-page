@@ -1,7 +1,25 @@
 .btn-div {
-  background-color: #1355FF;
   text-align: center;
-  padding: 20px;
-  color: #fff;
+  padding: 0px 30px;
   font-weight: 500;
+  max-width: 155px;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.inner-btn-div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.icon > svg {
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+.btn-text {
+  font-weight: 400;
 }
