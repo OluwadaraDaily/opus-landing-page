@@ -1,7 +1,6 @@
 import './Card.css'
 
 const Card = ({ imgName, text }) => {
-  console.log('Text =>', imgName)
   return ( 
     <div className='card-div'>
       <div className="icon">

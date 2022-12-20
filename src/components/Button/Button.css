@@ -5,6 +5,7 @@
   max-width: 155px;
   font-size: 14px;
   display: inline-block;
+  align-items: center;
 }
 
 .inner-btn-div {
@@ -13,6 +14,8 @@
   width: 100%;
   margin: 0 auto;
   justify-content: space-between;
+  height: 100%;
+  align-items: center;
 }
 
 .icon > svg {

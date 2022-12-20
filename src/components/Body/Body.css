@@ -1,5 +1,9 @@
 /* Generic Styles */
 
+h1 {
+  margin: 10px 0;
+}
+
 .h1-text {
   font-size: 55px;
   line-height: 65px;
@@ -30,6 +34,7 @@
   font-size: 16px;
   line-height: 32px;
   margin: 0;
+  font-weight: 300;
 }
 
 .text {
@@ -44,6 +49,12 @@
 }
 
 /* ----------------------- */
+
+/* Section 1 Styles */
+
+.section-01-desktop {
+  display: none;
+}
 
 .blue-box {
   height: 64px;
@@ -124,6 +135,10 @@
 
 .video {
   position: relative;
+}
+
+.video-image-desktop {
+  display: none;
 }
 
 .play-btn {
@@ -294,4 +309,269 @@
   flex-direction: column;
   text-align: center;
   align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  /* Generic Styles */
+  .h1-text {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  /* Section 1 Desktop */
+  .h1-text-desktop {
+    font-size: 64px;
+    line-height: 68px;
+  }
+
+  .section-01-desktop {
+    display: block;
+    position: relative;
+  }
+
+  .section-01 {
+    display: none;
+  }
+
+  .section-01-desktop {
+    margin: 0 auto;
+  }
+
+  .section-01-desktop .top-section {
+    height: 64px;
+    width: 64px;
+    background-color: #1355FF;
+  }
+
+  .top-section {
+    margin-left: 10%;
+  }
+
+
+  .main-section {
+    display: flex;
+  }
+
+  .left-section {
+    flex: 2;
+  }
+
+  .right-section {
+    position: relative;
+    flex: 1;
+  }
+
+  .main-section .left-section {
+    background-color: #061237;
+    color: #ffffff;
+  }
+  .left-section-text {
+    margin-left: 20%;
+    width: 60%;
+    padding: 80px 0;
+  }
+
+  .below-main-text {
+    display: flex;
+    gap: 15px;
+  }
+
+  .right-section .blue-div {
+    background-color: #1355FF;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -64px;
+  }
+
+  .below-main-section {
+    margin-left: 10%;
+    margin-right: 5%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+  }
+  .below-main-section .scroll-for-more {
+    padding: 25px 0;
+    background-color: #F7F9FC;
+    flex: 1.5;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .scroll-for-more p, .scroll-for-more i {
+    color: #B6BCCE;
+  }
+  .scroll-for-more p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1.5px;
+  }
+
+  .below-main-section .blue-section {
+    flex: 2;
+    background-color: #1355FF;
+  }
+
+  .ceo-section {
+    position: absolute;
+    right: 8%;
+    top: 12%;
+  }
+
+  .ceo-image {
+    position: relative;
+  }
+
+  .ceo-quote {
+    box-sizing: border-box;
+    width: 336px;
+    height: 288px;
+    padding: 30px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 5px;
+    right: -50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  p.ceo-quote-text {
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 300;
+  }
+
+  .ceo-name {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .ceo-title {
+    color: #67718E;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin: 2px 0;
+  }
+
+  .ceo-title span {
+    color: #1355FF;
+  }
+
+  /* Section 2 Desktop Styles */
+  .section-02 .container, .section-03 .container, .section-04 .container, .section-05 .container,
+  .section-06 .container, .section-07 .container {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .partner-logos {
+    flex-direction: row;
+  }
+
+  .section-02 .data-analytics {
+    display: flex;
+    flex-direction: row;
+    margin: 40px 0;
+  }
+
+  /* Section 3 Desktop Styles */
+  .section-03 .video-title-div {
+    margin-bottom: 0;
+  }
+
+  .video .video-image {
+    display: none;
+  }
+
+  .video .video-image-desktop {
+    display: block;
+  }
+
+  .video-main-div .text {
+    margin-left: 50%;
+    font-weight: 300;
+  }
+
+  .video-main-div {
+    margin-bottom: 100px;
+  }
+
+  .below-video-main-div {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .below-video-main-div > * {
+    flex: 1;
+  }
+
+  /* Section 4 Desktop */
+  .section-04 .call-to-action {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .ways-to-work-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+  }
+
+  .section-05 .container {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .section-05 .container > * {
+    flex: 1;
+  }
+
+  /* Section 6 Styles */
+  .section-06 .features-div {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+  }
+
+  .section-06 .features-div > *, .section-06 .our-knowledge-div > *, .section-06 .stamps > * {
+    flex: 1;
+  }
+
+  .section-06 .our-knowledge-div {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 25px;
+    align-items: center;
+  }
+
+  .section-06 .stamps {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+
+  /* Section 7 Desktop Styling */
+  .section-07 .articles-div {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+  }
+
+  .section-07 .resources-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
 }

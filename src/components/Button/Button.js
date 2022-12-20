@@ -10,7 +10,6 @@ const Button = ({ text, iconString, buttonColor, textColor }) => {
   if(iconString) {
     icon = React.createElement(Bootstrap[iconString]);
   }
-  console.log('Text Color ->', _textColor)
   return ( 
      <div className="btn-div" style={{ backgroundColor: _buttonColor }}>
       <div className="inner-btn-div">

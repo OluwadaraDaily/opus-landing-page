@@ -13,12 +13,15 @@ import partner3 from '../../img/partner-03.svg'
 import partner4 from '../../img/partner-04.svg'
 import play from '../../img/play.svg'
 import videoImage from '../../img/video-image.png'
+import videoImage1 from '../../img/video-image-2.png'
 import bgImg1 from '../../img/bg-1.png'
 import checkMark from '../../img/check.svg'
 import featuresImg from '../../img/features-img.png'
 import knowledgeImg from '../../img/our-knowledge-img.png'
 import stampsImg from '../../img/stamps-img.svg'
 import designerImg from '../../img/designer-img.png'
+import ceoImg from '../../img/ceo-img.png'
+import quoteImg from '../../img/quote.svg'
 
 const Body = () => {
   const itcInfo = [
@@ -61,9 +64,9 @@ const Body = () => {
 
   const leftArrow = React.createElement(Bootstrap["BsArrowLeftShort"]);
   const rightArrow = React.createElement(Bootstrap["BsArrowRightShort"]);
+  const mouseIcon = React.createElement(Bootstrap["BsMouse"])
   return ( 
     <section className="main-body">
-      
       {/* Section 1 */}
       <div className="section-01">
         <div className="blue-box-div">
@@ -84,6 +87,56 @@ const Body = () => {
             <p className="text">Explore Pages</p>
             <div className="img-div">
               <img src={img01} alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Section 1 Desktop View */}
+      <div className="section-01-desktop">
+        <div className="top-section"></div>
+        <div className="main-section">
+          <div className="left-section">
+            <div className="left-section-text">
+              <h1 className="h1-text-desktop">Built for enterprise businesses.</h1>
+              <p className="p-text">
+                Opus includes everything you need to build a beautiful website for your business.
+                Built to perform and look good doing so.
+              </p>
+              <div className="below-main-text">
+                <Button text="Learn More" iconString="BsArrowRightShort"/>
+                <p>Explore Pages</p>
+              </div>
+            </div>
+          </div>
+          <div className="right-section">
+            <div className="blue-div"></div>
+          </div>
+        </div>
+        <div className="below-main-section">
+          <div className="scroll-for-more">
+            <i>{mouseIcon}</i>
+            <p className="designer-name">scroll for more</p>
+          </div>
+          <div className="blue-section"></div>
+        </div>
+        <div className="ceo-section">
+          <div className="ceo-image">
+            <img src={ceoImg} alt="" />
+            <div className="ceo-quote">
+              <p className="ceo-quote-text">
+                I felt like I couldn’t grow until I moved to Opus.
+                Now I am encouraged to sell more with them.
+              </p>
+              <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                <div>
+                  <p className="ceo-name">Frank Dublin</p>
+                  <p className="ceo-title">ceo <span>@stamps</span></p>
+                </div>
+                <div>
+                  <img src={quoteImg} alt="" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -118,6 +171,7 @@ const Body = () => {
             <h1 className="h1-text">Inform users with video sections</h1>
             <div className="video">
               <img src={videoImage} className="video-image" alt="" />
+              <img src={videoImage1} alt="" className="video-image-desktop" />
               <img src={play} className="play-btn" alt="" />
             </div>
             <p className="text">
@@ -126,19 +180,21 @@ const Body = () => {
               Praesent pulvinar arcu non lectus dapibus, a pulvinar mauris aliquam.
             </p>
           </div>
-          <div>
-            <h1 className="h1-text">Make your site better with Opus</h1>
-            <p className="text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Cras eget consectetur eros. Aliquam erat volutpat.
-              Praesent pulvinar arcu non lectus dapibus, a pulvinar mauris aliquam.
-            </p>
-            <Button text="Learn More" padding="0 20px" />
-          </div>
-          <div className='info-cards'>
-            <img src={bgImg1} className="info-cards-bg" alt="" />
-            <Card imgName="arrow" text="Build or Customize a Website in Minutes"/>
-            <Card imgName="arrow-vector" text="Our UI Kit was made for creativity."/>
+          <div className="below-video-main-div">
+            <div>
+              <h1 className="h1-text">Make your site better with Opus</h1>
+              <p className="text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Cras eget consectetur eros. Aliquam erat volutpat.
+                Praesent pulvinar arcu non lectus dapibus, a pulvinar mauris aliquam.
+              </p>
+              <Button text="Learn More" padding="0 20px" />
+            </div>
+            <div className='info-cards'>
+              <img src={bgImg1} className="info-cards-bg" alt="" />
+              <Card imgName="arrow" text="Build or Customize a Website in Minutes"/>
+              <Card imgName="arrow-vector" text="Our UI Kit was made for creativity."/>
+            </div>
           </div>
         </div>
       </div>
@@ -150,7 +206,7 @@ const Body = () => {
             <h1 className="h1-text">Ways to work with us</h1>
             <Button text="Get Started" />
           </div>
-          <div>
+          <div className="ways-to-work-flex">
             {itcInfo.map((item, index) => (
               <ImageTextCard key={index} imgName={item.imgName} title={item.title} text={item.text} />
             ))}
@@ -169,7 +225,7 @@ const Body = () => {
                 Suspendisse varius enim in eros elementum tristique.
                 Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.
               </p>
-              <Button text="Learn More" />
+              <Button text="Learn More" buttonColor="#F7F9FC" textColor="#37456C" />
             </div>
           </div>
           <div className="icon-cards">
@@ -185,24 +241,26 @@ const Body = () => {
       <div className="section-06">
         <div className="container">
           <div className="features-div">
-            <div className="features-title">
-              <h4>Features</h4>
-            </div>
-            <div className='features-tagline'>
-              <h1 className="h2-text">You're not just doing business. You're doing life</h1>
-            </div>
-            <div className='features-list'>
-              <div className="features-item">
-                <img src={checkMark} alt="" />
-                <p className="features-text">Responsive Components</p>
+            <div>
+              <div className="features-title">
+                <h4>Features</h4>
               </div>
-              <div className="features-item">
-                <img src={checkMark} alt="" />
-                <p className="features-text">Over 50 Sections</p>
+              <div className='features-tagline'>
+                <h1 className="h2-text">You're not just doing business. You're doing life</h1>
               </div>
-              <div className="features-item">
-                <img src={checkMark} alt="" />
-                <p className="features-text">Handcrafted Pages</p>
+              <div className='features-list'>
+                <div className="features-item">
+                  <img src={checkMark} alt="" />
+                  <p className="features-text">Responsive Components</p>
+                </div>
+                <div className="features-item">
+                  <img src={checkMark} alt="" />
+                  <p className="features-text">Over 50 Sections</p>
+                </div>
+                <div className="features-item">
+                  <img src={checkMark} alt="" />
+                  <p className="features-text">Handcrafted Pages</p>
+                </div>
               </div>
             </div>
             <div className="features-img">
@@ -210,35 +268,39 @@ const Body = () => {
             </div>
           </div>
           <div className="our-knowledge-div">
-            <div className="features-title">
-              <h4>Our Knowledge</h4>
-            </div>
-            <div className='our-knowledge-text'>
-              <h1 className="h2-text">A UI Kit that's Modern & Elegant</h1>
-              <p className="p-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget consectetur eros. Aliquam erat volutpat.</p>
+            <div>
+              <div className="features-title">
+                <h4>Our Knowledge</h4>
+              </div>
+              <div className='our-knowledge-text'>
+                <h1 className="h2-text">A UI Kit that's Modern & Elegant</h1>
+                <p className="p-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget consectetur eros. Aliquam erat volutpat.</p>
+              </div>
             </div>
             <div>
               <img src={knowledgeImg} alt="" />
             </div>
           </div>
           <div className="stamps">
-            <div className="stamps-img">
-              <img src={stampsImg} alt="" />
-            </div>
-            <div className="stamps-info">
-              <h4 className="h4-text">
-                The Opus UI Kit lets you showcase your work in style. It's helped take our business online
-              </h4>
-              <div className="designer-info">
-                <p className="designer-name">Alexa F.</p>
-                <p className="designer-title">Designer <span>@Stamps</span></p>
+            <div>
+              <div className="stamps-img">
+                <img src={stampsImg} alt="" />
               </div>
-              <div className="toggle">
-                <div className="left-toggle">
-                  <i className='left-arrow-icon'>{leftArrow}</i>
+              <div className="stamps-info">
+                <h4 className="h4-text">
+                  The Opus UI Kit lets you showcase your work in style. It's helped take our business online
+                </h4>
+                <div className="designer-info">
+                  <p className="designer-name">Alexa F.</p>
+                  <p className="designer-title">Designer <span>@Stamps</span></p>
                 </div>
-                <div className="right-toggle">
-                  <i className='right-arrow-icon'>{rightArrow}</i>
+                <div className="toggle">
+                  <div className="left-toggle">
+                    <i className='left-arrow-icon'>{leftArrow}</i>
+                  </div>
+                  <div className="right-toggle">
+                    <i className='right-arrow-icon'>{rightArrow}</i>
+                  </div>
                 </div>
               </div>
             </div>
@@ -256,17 +318,19 @@ const Body = () => {
             <h1 className="h1-text">Resources</h1>
             <Button text="Get Started"/>
           </div>
-          {articles.map((item, index) => (
-            <ImageTextCard 
-              key={index}
-              imgName={item.imgName}
-              title={item.title}
-              text={item.text}
-              textColor={item.textColor}
-              buttonText={item.buttonText}
-              buttonColor={item.buttonColor}
-            />
-          ))}
+          <div className="articles-div">
+            {articles.map((item, index) => (
+              <ImageTextCard 
+                key={index}
+                imgName={item.imgName}
+                title={item.title}
+                text={item.text}
+                textColor={item.textColor}
+                buttonText={item.buttonText}
+                buttonColor={item.buttonColor}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section> 

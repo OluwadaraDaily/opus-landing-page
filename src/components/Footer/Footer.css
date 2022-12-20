@@ -109,3 +109,12 @@ li {
 .bottom-bar-link:hover {
     cursor: pointer;
 }
+
+
+@media only screen and (min-width: 768px) {
+    .footer-details {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
